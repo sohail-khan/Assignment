@@ -1,0 +1,45 @@
+set(headers ${headers} platform/Routes/View
+)
+set(currsources
+  platform/Routes/View/CMakeLists.txt
+  platform/Routes/View/IRouteViewFactory.h
+  platform/Routes/View/RouteRenderVertex.h
+  platform/Routes/View/RouteView.cpp
+  platform/Routes/View/RouteView.h
+  platform/Routes/View/RouteViewFactory.cpp
+  platform/Routes/View/RouteViewFactory.h
+  platform/Routes/View/RouteViewFactoryRepository.cpp
+  platform/Routes/View/RouteViewFactoryRepository.h
+  platform/Routes/View/RouteViewFittedRouteObserver.cpp
+  platform/Routes/View/RouteViewFittedRouteObserver.h
+  platform/Routes/View/RouteViewGeometryFactory.cpp
+  platform/Routes/View/RouteViewGeometryFactory.h
+  platform/Routes/View/RouteViewGeometryFactoryConfig.h
+  platform/Routes/View/RouteViewGeometryFactoryCurveHelpers.cpp
+  platform/Routes/View/RouteViewGeometryFactoryCurveHelpers.h
+  platform/Routes/View/RouteViewGeometryFactoryTangentVert.h
+  platform/Routes/View/RouteViewGeometryFactoryTransforms.cpp
+  platform/Routes/View/RouteViewGeometryFactoryTransforms.h
+  platform/Routes/View/RouteViewMaterial.cpp
+  platform/Routes/View/RouteViewMaterial.h
+  platform/Routes/View/RouteViewMeshFactory.cpp
+  platform/Routes/View/RouteViewMeshFactory.h
+  platform/Routes/View/RouteViewRenderable.cpp
+  platform/Routes/View/RouteViewRenderable.h
+  platform/Routes/View/RouteViewRenderer.cpp
+  platform/Routes/View/RouteViewRenderer.h
+  platform/Routes/View/RouteViewRepository.cpp
+  platform/Routes/View/RouteViewRepository.h
+  platform/Routes/View/RouteViewSegment.h
+  platform/Routes/View/RouteViewService.cpp
+  platform/Routes/View/RouteViewService.h
+  platform/Routes/View/RouteViewShader.cpp
+  platform/Routes/View/RouteViewShader.h
+  platform/Routes/View/RouteViewStyleCallback.h
+  platform/Routes/View/RouteViewStyleObserver.cpp
+  platform/Routes/View/RouteViewStyleObserver.h
+  platform/Routes/View/ViewFactoryMappingRouteObserver.cpp
+  platform/Routes/View/ViewFactoryMappingRouteObserver.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Routes\\View FILES ${currsources})

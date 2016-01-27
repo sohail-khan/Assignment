@@ -1,0 +1,1 @@
+../../../eeGeo/platform/AppInfo.h

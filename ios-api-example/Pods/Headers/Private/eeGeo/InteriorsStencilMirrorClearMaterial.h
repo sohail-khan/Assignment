@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Resources/Interiors/InteriorsStencilMirrorClearMaterial.h

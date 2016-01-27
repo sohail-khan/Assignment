@@ -1,0 +1,1 @@
+../../../eeGeo/sdk-extensions/sqlite/SQLiteSpellingSuggestionResults.h

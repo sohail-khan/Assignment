@@ -1,0 +1,46 @@
+set(headers ${headers} platform/Routes
+)
+set(currsources
+  platform/Routes/CMakeLists.txt
+  platform/Routes/IRouteCreator.h
+  platform/Routes/LocalRouteVertex.h
+  platform/Routes/LocalRouteVertexSubdivider.cpp
+  platform/Routes/LocalRouteVertexSubdivider.h
+  platform/Routes/Route.cpp
+  platform/Routes/Route.h
+  platform/Routes/RouteBuilder.cpp
+  platform/Routes/RouteBuilder.h
+  platform/Routes/RouteCallback.h
+  platform/Routes/RouteConstants.h
+  platform/Routes/RouteFactory.cpp
+  platform/Routes/RouteFactory.h
+  platform/Routes/RouteRepository.cpp
+  platform/Routes/RouteRepository.h
+  platform/Routes/Routes.h
+  platform/Routes/RouteService.cpp
+  platform/Routes/RouteService.h
+  platform/Routes/RouteStyleRepository.cpp
+  platform/Routes/RouteStyleRepository.h
+  platform/Routes/RouteVertex.cpp
+  platform/Routes/RouteVertex.h
+  platform/Routes/RouteVertexClassification.h
+  platform/Routes/RouteVertexDebugVisualiser.cpp
+  platform/Routes/RouteVertexDebugVisualiser.h
+  platform/Routes/RouteVertexHelpers.cpp
+  platform/Routes/RouteVertexHelpers.h
+  platform/Routes/RoutingNavigationGraphObserver.cpp
+  platform/Routes/RoutingNavigationGraphObserver.h
+  platform/Routes/RoutingSceneGraphObserver.cpp
+  platform/Routes/RoutingSceneGraphObserver.h
+  platform/Routes/RoutingTerrainHeightsObserver.cpp
+  platform/Routes/RoutingTerrainHeightsObserver.h
+  platform/Routes/StyleMappingRouteObserver.cpp
+  platform/Routes/StyleMappingRouteObserver.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Routes FILES ${currsources})
+include(platform/Routes/Clipping/CMakeLists.txt)
+include(platform/Routes/Fitting/CMakeLists.txt)
+include(platform/Routes/Simulation/CMakeLists.txt)
+include(platform/Routes/Style/CMakeLists.txt)
+include(platform/Routes/View/CMakeLists.txt)

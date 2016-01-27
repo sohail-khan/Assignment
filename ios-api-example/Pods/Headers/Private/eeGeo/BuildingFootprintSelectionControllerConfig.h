@@ -1,0 +1,1 @@
+../../../eeGeo/platform/BuildingFootprints/BuildingFootprintSelectionControllerConfig.h

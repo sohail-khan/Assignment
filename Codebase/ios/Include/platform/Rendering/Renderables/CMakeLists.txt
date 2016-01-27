@@ -1,0 +1,47 @@
+set(headers ${headers} platform/Rendering/Renderables
+)
+set(currsources
+  platform/Rendering/Renderables/AnimatedObjectsRenderable.h
+  platform/Rendering/Renderables/BasicRenderable.h
+  platform/Rendering/Renderables/BatchedSpriteRenderable.cpp
+  platform/Rendering/Renderables/BatchedSpriteRenderable.h
+  platform/Rendering/Renderables/BatchedSpriteRenderableHelpers.cpp
+  platform/Rendering/Renderables/BatchedSpriteRenderableHelpers.h
+  platform/Rendering/Renderables/CMakeLists.txt
+  platform/Rendering/Renderables/CulledMeshRenderable.cpp
+  platform/Rendering/Renderables/CulledMeshRenderable.h
+  platform/Rendering/Renderables/CustomLandmarkRenderable.h
+  platform/Rendering/Renderables/InstancedInteriorFloorRenderable.cpp
+  platform/Rendering/Renderables/InstancedInteriorFloorRenderable.h
+  platform/Rendering/Renderables/InteriorFloorRenderable.cpp
+  platform/Rendering/Renderables/InteriorFloorRenderable.h
+  platform/Rendering/Renderables/InteriorHighlightRenderable.cpp
+  platform/Rendering/Renderables/InteriorHighlightRenderable.h
+  platform/Rendering/Renderables/InteriorRenderable.cpp
+  platform/Rendering/Renderables/InteriorRenderable.h
+  platform/Rendering/Renderables/LightmappedRenderable.h
+  platform/Rendering/Renderables/MeshRenderable.cpp
+  platform/Rendering/Renderables/MeshRenderable.h
+  platform/Rendering/Renderables/ModelRenderable.cpp
+  platform/Rendering/Renderables/ModelRenderable.h
+  platform/Rendering/Renderables/PackedRenderable.cpp
+  platform/Rendering/Renderables/PackedRenderable.h
+  platform/Rendering/Renderables/PackedShadowRenderable.cpp
+  platform/Rendering/Renderables/PackedShadowRenderable.h
+  platform/Rendering/Renderables/PlaceNameRenderable.h
+  platform/Rendering/Renderables/SceneModelMeshRenderable.cpp
+  platform/Rendering/Renderables/SceneModelMeshRenderable.h
+  platform/Rendering/Renderables/SceneModelRenderable.cpp
+  platform/Rendering/Renderables/SceneModelRenderable.h
+  platform/Rendering/Renderables/SceneModelTriStripRenderable.cpp
+  platform/Rendering/Renderables/SceneModelTriStripRenderable.h
+  platform/Rendering/Renderables/TextRenderable.h
+  platform/Rendering/Renderables/UniformColoredRenderable.h
+  platform/Rendering/Renderables/UniqueTextureRenderable.h
+  platform/Rendering/Renderables/WaterRenderable.cpp
+  platform/Rendering/Renderables/WaterRenderable.h
+  platform/Rendering/Renderables/WorldMeshRenderable.cpp
+  platform/Rendering/Renderables/WorldMeshRenderable.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Rendering\\Renderables FILES ${currsources})

@@ -1,0 +1,46 @@
+set(headers ${headers} platform/Traffic
+)
+set(currsources
+  platform/Traffic/CarVehicleFactory.cpp
+  platform/Traffic/CarVehicleFactory.h
+  platform/Traffic/CMakeLists.txt
+  platform/Traffic/IVehicle.h
+  platform/Traffic/IVehicleFactory.h
+  platform/Traffic/IVehicleModel.h
+  platform/Traffic/PathedVehicle.cpp
+  platform/Traffic/PathedVehicle.h
+  platform/Traffic/PlaneSimulation.cpp
+  platform/Traffic/PlaneSimulation.h
+  platform/Traffic/PlaneVehicle.cpp
+  platform/Traffic/PlaneVehicle.h
+  platform/Traffic/Traffic.h
+  platform/Traffic/TrafficSimulationCell.cpp
+  platform/Traffic/TrafficSimulationCell.h
+  platform/Traffic/TrafficSimulationCellsModel.cpp
+  platform/Traffic/TrafficSimulationCellsModel.h
+  platform/Traffic/TrafficSimulationController.cpp
+  platform/Traffic/TrafficSimulationController.h
+  platform/Traffic/TrafficSimulationFactory.cpp
+  platform/Traffic/TrafficSimulationFactory.h
+  platform/Traffic/TrainCarriage.cpp
+  platform/Traffic/TrainCarriage.h
+  platform/Traffic/TrainVehicle.cpp
+  platform/Traffic/TrainVehicle.h
+  platform/Traffic/TrainVehicleFactory.cpp
+  platform/Traffic/TrainVehicleFactory.h
+  platform/Traffic/VehicleModel.cpp
+  platform/Traffic/VehicleModel.h
+  platform/Traffic/VehicleModelLoadHandler.h
+  platform/Traffic/VehicleModelNodeRepository.cpp
+  platform/Traffic/VehicleModelNodeRepository.h
+  platform/Traffic/VehicleRenderablesModel.cpp
+  platform/Traffic/VehicleRenderablesModel.h
+  platform/Traffic/VehicleRenderer.cpp
+  platform/Traffic/VehicleRenderer.h
+  platform/Traffic/VehiclesOnNavigationGraphSimulation.cpp
+  platform/Traffic/VehiclesOnNavigationGraphSimulation.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Traffic FILES ${currsources})
+include(platform/Traffic/Config/CMakeLists.txt)
+include(platform/Traffic/Themes/CMakeLists.txt)

@@ -1,0 +1,9 @@
+CLANG_CXX_LANGUAGE_STANDARD = c++11
+CLANG_CXX_LIBRARY = libc++
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/eeGeo" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FPPopover" "${PODS_ROOT}/Headers/Public/GoogleMaps" "${PODS_ROOT}/Headers/Public/SMCalloutView" "${PODS_ROOT}/Headers/Public/eeGeo"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/eeGeo" $(inherited) "${PODS_ROOT}/eeGeo" $(inherited) "${PODS_ROOT}/eeGeo" $(inherited) "${PODS_ROOT}/eeGeo" $(inherited) "${PODS_ROOT}/eeGeo"
+OTHER_CPLUSPLUSFLAGS = -DCOMPILE_CPP_11=1
+OTHER_LDFLAGS = -l"apps-on-maps-cpp11" -l"apps-on-maps-cpp11-sim" -l"c++" -l"curl" -l"turbojpeg" -l"uv" -l"z" -framework "CFNetwork" -framework "CoreData" -framework "CoreGraphics" -framework "CoreLocation" -framework "Foundation" -framework "GLKit" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

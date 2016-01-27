@@ -1,0 +1,47 @@
+if(${ANDROID})
+set(headers ${headers} platform/Android
+)
+set(currsources
+  platform/Android/AndroidAppInfoFactory.cpp
+  platform/Android/AndroidAppInfoFactory.h
+  platform/Android/AndroidCacheFileIO.cpp
+  platform/Android/AndroidCacheFileIO.h
+  platform/Android/AndroidConnectivityService.cpp
+  platform/Android/AndroidConnectivityService.h
+  platform/Android/AndroidFileIO.cpp
+  platform/Android/AndroidFileIO.h
+  platform/Android/AndroidFileIOHelpers.cpp
+  platform/Android/AndroidFileIOHelpers.h
+  platform/Android/AndroidGLContextProxy.h
+  platform/Android/AndroidGlTaskContextFactory.cpp
+  platform/Android/AndroidGlTaskContextFactory.h
+  platform/Android/AndroidLocationService.cpp
+  platform/Android/AndroidLocationService.h
+  platform/Android/AndroidMemoryStats.cpp
+  platform/Android/AndroidMemoryStats.h
+  platform/Android/AndroidNativeState.h
+  platform/Android/AndroidNetworkBandwidthStats.cpp
+  platform/Android/AndroidPlatformAbstractionModule.cpp
+  platform/Android/AndroidPlatformAbstractionModule.h
+  platform/Android/AndroidPlatformConfigBuilder.cpp
+  platform/Android/AndroidPlatformConfigBuilder.h
+  platform/Android/AndroidSharedGlContext.cpp
+  platform/Android/AndroidSharedGlContext.h
+  platform/Android/AndroidTextRenderer.cpp
+  platform/Android/AndroidTextRenderer.h
+  platform/Android/AndroidTextureFileLoader.cpp
+  platform/Android/AndroidTextureFileLoader.h
+  platform/Android/AndroidThreadHelper.cpp
+  platform/Android/AndroidThreadHelper.h
+  platform/Android/AndroidUrlEncoder.cpp
+  platform/Android/AndroidUrlEncoder.h
+  platform/Android/CMakeLists.txt
+  platform/Android/KtxLoader.cpp
+  platform/Android/KtxLoader.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Android FILES ${currsources})
+include(platform/Android/Cache/CMakeLists.txt)
+include(platform/Android/Input/CMakeLists.txt)
+include(platform/Android/KtxTextures/CMakeLists.txt)
+endif(${ANDROID})

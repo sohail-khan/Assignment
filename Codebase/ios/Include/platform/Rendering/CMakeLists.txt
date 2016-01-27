@@ -1,0 +1,84 @@
+set(headers ${headers} platform/Rendering
+)
+set(currsources
+  platform/Rendering/CMakeLists.txt
+  platform/Rendering/Colors.h
+  platform/Rendering/DynamicBuffer.h
+  platform/Rendering/EnvironmentFlatteningService.cpp
+  platform/Rendering/EnvironmentFlatteningService.h
+  platform/Rendering/EnvironmentMaterialFactory.cpp
+  platform/Rendering/EnvironmentMaterialFactory.h
+  platform/Rendering/EnvironmentMaterialRepository.cpp
+  platform/Rendering/EnvironmentMaterialRepository.h
+  platform/Rendering/EnvironmentStateTextures.cpp
+  platform/Rendering/EnvironmentStateTextures.h
+  platform/Rendering/EnvironmentTexture.h
+  platform/Rendering/EnvironmentTextures.cpp
+  platform/Rendering/EnvironmentTextures.h
+  platform/Rendering/GlBufferPool.cpp
+  platform/Rendering/GlBufferPool.h
+  platform/Rendering/GLState.cpp
+  platform/Rendering/GLState.h
+  platform/Rendering/GLStateTypes.h
+  platform/Rendering/IdTypes.h
+  platform/Rendering/IEnvironmentTexturesObserver.h
+  platform/Rendering/IMaterialProvider.h
+  platform/Rendering/IMaterialRepository.h
+  platform/Rendering/IRenderableFilter.h
+  platform/Rendering/ITextRenderablesSource.h
+  platform/Rendering/ITexturePageLayout.h
+  platform/Rendering/LayerIds.h
+  platform/Rendering/LoadingScreen.cpp
+  platform/Rendering/LoadingScreen.h
+  platform/Rendering/LoadingScreenConfig.h
+  platform/Rendering/LoadingScreenRenderables.cpp
+  platform/Rendering/LoadingScreenRenderables.h
+  platform/Rendering/MaterialRepository.cpp
+  platform/Rendering/MaterialRepository.h
+  platform/Rendering/Mesh.cpp
+  platform/Rendering/Mesh.h
+  platform/Rendering/PackedTwoTextureDiffuseMeshFactory.h
+  platform/Rendering/PositionMeshFactory.cpp
+  platform/Rendering/PositionMeshFactory.h
+  platform/Rendering/RegularTexturePageLayout.cpp
+  platform/Rendering/RegularTexturePageLayout.h
+  platform/Rendering/RenderableBase.cpp
+  platform/Rendering/RenderableBase.h
+  platform/Rendering/RenderableFilters.cpp
+  platform/Rendering/RenderableFilters.h
+  platform/Rendering/RenderContext.cpp
+  platform/Rendering/RenderContext.h
+  platform/Rendering/Rendering.h
+  platform/Rendering/RenderQueue.cpp
+  platform/Rendering/RenderQueue.h
+  platform/Rendering/RenderTexture.cpp
+  platform/Rendering/RenderTexture.h
+  platform/Rendering/ScreenProperties.cpp
+  platform/Rendering/ScreenProperties.h
+  platform/Rendering/Shader.cpp
+  platform/Rendering/Shader.h
+  platform/Rendering/SortKey.h
+  platform/Rendering/StencilLayersController.cpp
+  platform/Rendering/StencilLayersController.h
+  platform/Rendering/StencilMapLayerMask.h
+  platform/Rendering/TextureMinifyType.h
+  platform/Rendering/TriStripMesh.cpp
+  platform/Rendering/TriStripMesh.h
+  platform/Rendering/VAOCache.cpp
+  platform/Rendering/VAOCache.h
+  platform/Rendering/VertexBufferBindingHelpers.h
+  platform/Rendering/VertexSemantics.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Rendering FILES ${currsources})
+include(platform/Rendering/AsyncTexturing/CMakeLists.txt)
+include(platform/Rendering/Filters/CMakeLists.txt)
+include(platform/Rendering/Geometry/CMakeLists.txt)
+include(platform/Rendering/Materials/CMakeLists.txt)
+include(platform/Rendering/MeshFactories/CMakeLists.txt)
+include(platform/Rendering/Renderables/CMakeLists.txt)
+include(platform/Rendering/Scene/CMakeLists.txt)
+include(platform/Rendering/SceneModels/CMakeLists.txt)
+include(platform/Rendering/Shaders/CMakeLists.txt)
+include(platform/Rendering/VertexLayouts/CMakeLists.txt)
+include(platform/Rendering/VertexTypes/CMakeLists.txt)

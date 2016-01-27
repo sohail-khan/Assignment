@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Data/StencilArea/Materials/StencilAreaShader.h

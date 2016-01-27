@@ -1,0 +1,49 @@
+set(headers ${headers} platform/Collision
+)
+set(currsources
+  platform/Collision/AggregateCollisionBvhProvider.cpp
+  platform/Collision/AggregateCollisionBvhProvider.h
+  platform/Collision/CMakeLists.txt
+  platform/Collision/Collision.h
+  platform/Collision/CollisionBvh.cpp
+  platform/Collision/CollisionBvh.h
+  platform/Collision/CollisionBvhFactory.cpp
+  platform/Collision/CollisionBvhFactory.h
+  platform/Collision/CollisionBvhGatherer.cpp
+  platform/Collision/CollisionBvhGatherer.h
+  platform/Collision/CollisionBvhIntersectionQueries.cpp
+  platform/Collision/CollisionBvhIntersectionQueries.h
+  platform/Collision/CollisionBvhNode.cpp
+  platform/Collision/CollisionBvhNode.h
+  platform/Collision/CollisionBvhNodeIntersectionTests.h
+  platform/Collision/CollisionBvhRayCaster.h
+  platform/Collision/CollisionGroup.h
+  platform/Collision/CollisionMaterial.h
+  platform/Collision/CollisionMaterialIndexLookupPair.h
+  platform/Collision/CollisionMaterialTable.h
+  platform/Collision/CollisionMeshBuiltResource.cpp
+  platform/Collision/CollisionMeshBuiltResource.h
+  platform/Collision/CollisionMeshRayPicker.cpp
+  platform/Collision/CollisionMeshRayPicker.h
+  platform/Collision/CollisionMeshResourceRepository.cpp
+  platform/Collision/CollisionMeshResourceRepository.h
+  platform/Collision/CollisionSubMesh.h
+  platform/Collision/CollisionSubMeshBuilder.cpp
+  platform/Collision/CollisionSubMeshBuilder.h
+  platform/Collision/EnvironmentRayCaster.cpp
+  platform/Collision/EnvironmentRayCaster.h
+  platform/Collision/ICollisionBvhFactory.h
+  platform/Collision/ICollisionBvhProvider.h
+  platform/Collision/ICollisionMeshResource.h
+  platform/Collision/IRayCaster.h
+  platform/Collision/IRayPicker.h
+  platform/Collision/RayCasterFirstIntersectionBuilder.cpp
+  platform/Collision/RayCasterFirstIntersectionBuilder.h
+  platform/Collision/RayCasterResult.h
+  platform/Collision/RayMeshIntersectionResult.h
+  platform/Collision/RayNodeIntersectionResult.h
+  platform/Collision/SkewedRay.h
+  platform/Collision/StackAllocatedRayCaster.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Collision FILES ${currsources})

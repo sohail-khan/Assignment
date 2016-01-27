@@ -1,0 +1,36 @@
+//  Copyright (c) 2014 eeGeo. All rights reserved.
+
+#pragma once
+
+#include "Types.h"
+#include "IFileIO.h"
+#include "WindowsNativeState.h"
+
+#include <string>
+
+namespace Eegeo
+{
+	namespace Windows
+	{
+
+		class WindowsCacheFileIO : public Eegeo::Helpers::IFileIO
+		{
+			std::string m_assetPathPrefix;
+
+			std::string GetPath(const std::string& name) const;
+
+		public:
+
+			WindowsCacheFileIO(WindowsNativeState* pState);
+			~WindowsCacheFileIO();
+
+			bool OpenFile(std::fstream& stream, size_t& size, const std::string& name, std::ios_base::openmode mode=std::ifstream::in);
+			bool WriteFile(const Byte* data, size_t size, const std::string& name, std::ios_base::openmode mode=std::ifstream::out);
+			bool DeleteFile(const std::string& name);
+			bool Exists(const std::string& name);
+			std::string GetAppFilePathname(const std::string& filename);
+			bool TryStat(const std::string& name, Helpers::FileStat& out_s);
+		};
+
+	}
+}

@@ -1,0 +1,44 @@
+set(headers ${headers} platform/Routes/Fitting/NavGraphConforming
+)
+set(currsources
+  platform/Routes/Fitting/NavGraphConforming/AttemptFittingPredicate.cpp
+  platform/Routes/Fitting/NavGraphConforming/AttemptFittingPredicate.h
+  platform/Routes/Fitting/NavGraphConforming/CandidateGenerator.cpp
+  platform/Routes/Fitting/NavGraphConforming/CandidateGenerator.h
+  platform/Routes/Fitting/NavGraphConforming/CandidateSet.cpp
+  platform/Routes/Fitting/NavGraphConforming/CandidateSet.h
+  platform/Routes/Fitting/NavGraphConforming/CandidateSetGenerator.cpp
+  platform/Routes/Fitting/NavGraphConforming/CandidateSetGenerator.h
+  platform/Routes/Fitting/NavGraphConforming/ClippedRouteSectionPredicates.h
+  platform/Routes/Fitting/NavGraphConforming/CMakeLists.txt
+  platform/Routes/Fitting/NavGraphConforming/ConformerRouteSection.h
+  platform/Routes/Fitting/NavGraphConforming/ConformerSolution.h
+  platform/Routes/Fitting/NavGraphConforming/FittedRangeBuilder.cpp
+  platform/Routes/Fitting/NavGraphConforming/FittedRangeBuilder.h
+  platform/Routes/Fitting/NavGraphConforming/FittedRangeForRoad.h
+  platform/Routes/Fitting/NavGraphConforming/NavGraphConformer.cpp
+  platform/Routes/Fitting/NavGraphConforming/NavGraphConformer.h
+  platform/Routes/Fitting/NavGraphConforming/NavGraphConformerConfig.h
+  platform/Routes/Fitting/NavGraphConforming/NavGraphConformerOutputBuilder.cpp
+  platform/Routes/Fitting/NavGraphConforming/NavGraphConformerOutputBuilder.h
+  platform/Routes/Fitting/NavGraphConforming/NavGraphConformerSolver.cpp
+  platform/Routes/Fitting/NavGraphConforming/NavGraphConformerSolver.h
+  platform/Routes/Fitting/NavGraphConforming/NavGraphConnectionCache.cpp
+  platform/Routes/Fitting/NavGraphConforming/NavGraphConnectionCache.h
+  platform/Routes/Fitting/NavGraphConforming/RangeSolver.cpp
+  platform/Routes/Fitting/NavGraphConforming/RangeSolver.h
+  platform/Routes/Fitting/NavGraphConforming/SearchNodePriorityComparer.h
+  platform/Routes/Fitting/NavGraphConforming/SelectedRoad.h
+  platform/Routes/Fitting/NavGraphConforming/SelectedRoadRepository.cpp
+  platform/Routes/Fitting/NavGraphConforming/SelectedRoadRepository.h
+  platform/Routes/Fitting/NavGraphConforming/SolverConfig.h
+  platform/Routes/Fitting/NavGraphConforming/SolverNode.cpp
+  platform/Routes/Fitting/NavGraphConforming/SolverNode.h
+  platform/Routes/Fitting/NavGraphConforming/SolverNodeAllocator.cpp
+  platform/Routes/Fitting/NavGraphConforming/SolverNodeAllocator.h
+  platform/Routes/Fitting/NavGraphConforming/SolverRange.h
+  platform/Routes/Fitting/NavGraphConforming/SolverRangeBuilder.cpp
+  platform/Routes/Fitting/NavGraphConforming/SolverRangeBuilder.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Routes\\Fitting\\NavGraphConforming FILES ${currsources})

@@ -1,0 +1,42 @@
+set(headers ${headers} platform/Geometry
+)
+set(currsources
+  platform/Geometry/BezierCurve.cpp
+  platform/Geometry/BezierCurve.h
+  platform/Geometry/Bounds.cpp
+  platform/Geometry/Bounds.h
+  platform/Geometry/CatmullRomInterpolation.h
+  platform/Geometry/CatmullRomSpline.cpp
+  platform/Geometry/CatmullRomSpline.h
+  platform/Geometry/Circle.cpp
+  platform/Geometry/Circle.h
+  platform/Geometry/CMakeLists.txt
+  platform/Geometry/DoublePlane.cpp
+  platform/Geometry/DoublePlane.h
+  platform/Geometry/DoublePlaneMethods.cpp
+  platform/Geometry/DoublePlaneMethods.h
+  platform/Geometry/Frustum.cpp
+  platform/Geometry/Frustum.h
+  platform/Geometry/Geometry.h
+  platform/Geometry/IntersectionTests.cpp
+  platform/Geometry/IntersectionTests.h
+  platform/Geometry/ISpline.h
+  platform/Geometry/Line2.cpp
+  platform/Geometry/Line2.h
+  platform/Geometry/LineSegmentMethods.cpp
+  platform/Geometry/LineSegmentMethods.h
+  platform/Geometry/OrientedBox.cpp
+  platform/Geometry/OrientedBox.h
+  platform/Geometry/Plane.cpp
+  platform/Geometry/Plane.h
+  platform/Geometry/Point3Spline.cpp
+  platform/Geometry/Point3Spline.h
+  platform/Geometry/SingleSphere.cpp
+  platform/Geometry/SingleSphere.h
+  platform/Geometry/Sphere.h
+  platform/Geometry/VectorGeometryHelpers2d.cpp
+  platform/Geometry/VectorGeometryHelpers2d.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Geometry FILES ${currsources})
+include(platform/Geometry/Intersection2d/CMakeLists.txt)

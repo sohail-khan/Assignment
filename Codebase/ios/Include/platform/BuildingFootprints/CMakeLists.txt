@@ -1,0 +1,48 @@
+set(headers ${headers} platform/BuildingFootprints
+)
+set(currsources
+  platform/BuildingFootprints/BuildingFootprint.cpp
+  platform/BuildingFootprints/BuildingFootprint.h
+  platform/BuildingFootprints/BuildingFootprintCoverage.h
+  platform/BuildingFootprints/BuildingFootprintJsonParser.cpp
+  platform/BuildingFootprints/BuildingFootprintJsonParser.h
+  platform/BuildingFootprints/BuildingFootprintRepository.cpp
+  platform/BuildingFootprints/BuildingFootprintRepository.h
+  platform/BuildingFootprints/BuildingFootprintResource.cpp
+  platform/BuildingFootprints/BuildingFootprintResource.h
+  platform/BuildingFootprints/BuildingFootprintResourceCoverage.cpp
+  platform/BuildingFootprints/BuildingFootprintResourceCoverage.h
+  platform/BuildingFootprints/BuildingFootprintResourceCoverageFactory.cpp
+  platform/BuildingFootprints/BuildingFootprintResourceCoverageFactory.h
+  platform/BuildingFootprints/BuildingFootprintResourceService.cpp
+  platform/BuildingFootprints/BuildingFootprintResourceService.h
+  platform/BuildingFootprints/BuildingFootprintResourceStore.cpp
+  platform/BuildingFootprints/BuildingFootprintResourceStore.h
+  platform/BuildingFootprints/BuildingFootprints.h
+  platform/BuildingFootprints/BuildingFootprintSelectionController.cpp
+  platform/BuildingFootprints/BuildingFootprintSelectionController.h
+  platform/BuildingFootprints/BuildingFootprintSelectionControllerConfig.h
+  platform/BuildingFootprints/BuildingFootprintSelectionModel.h
+  platform/BuildingFootprints/BuildingFootprintSelectionRenderableFactory.cpp
+  platform/BuildingFootprints/BuildingFootprintSelectionRenderableFactory.h
+  platform/BuildingFootprints/BuildingFootprintSelectionView.cpp
+  platform/BuildingFootprints/BuildingFootprintSelectionView.h
+  platform/BuildingFootprints/BuildingFootprintSelectionViewFactory.cpp
+  platform/BuildingFootprints/BuildingFootprintSelectionViewFactory.h
+  platform/BuildingFootprints/BuildingFootprintService.cpp
+  platform/BuildingFootprints/BuildingFootprintService.h
+  platform/BuildingFootprints/BuildingFootprintServiceQuery.cpp
+  platform/BuildingFootprints/BuildingFootprintServiceQuery.h
+  platform/BuildingFootprints/BuildingFootprintWebLoader.cpp
+  platform/BuildingFootprints/BuildingFootprintWebLoader.h
+  platform/BuildingFootprints/BuildingFootprintWebLoaderResult.h
+  platform/BuildingFootprints/BuildingSelectionController.cpp
+  platform/BuildingFootprints/BuildingSelectionController.h
+  platform/BuildingFootprints/CMakeLists.txt
+  platform/BuildingFootprints/IBuildingFootprintResourceCoverage.h
+  platform/BuildingFootprints/IBuildingFootprintResourceCoverageFactory.h
+  platform/BuildingFootprints/MortonKeyLRUCache.cpp
+  platform/BuildingFootprints/MortonKeyLRUCache.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\BuildingFootprints FILES ${currsources})

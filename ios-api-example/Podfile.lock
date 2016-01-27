@@ -1,0 +1,19 @@
+PODS:
+  - eeGeo (1.0.369):
+    - SMCalloutView (~> 2.1)
+  - FPPopover (1.4.1)
+  - GoogleMaps (1.10.1)
+  - SMCalloutView (2.1.4)
+
+DEPENDENCIES:
+  - eeGeo
+  - FPPopover (= 1.4.1)
+  - GoogleMaps (= 1.10.1)
+
+SPEC CHECKSUMS:
+  eeGeo: ac38ea1584a1ec42810c2966ce251394b4457b33
+  FPPopover: aaf34a88cad4113867c5f1d0a4f9b2f1c06e2352
+  GoogleMaps: ebf08677f181d9c2dcdbd1721d206f02beccc9b1
+  SMCalloutView: 2ea4454883b79ed4bc73e15e00ee7d954e0e6166
+
+COCOAPODS: 0.39.0

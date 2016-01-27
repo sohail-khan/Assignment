@@ -1,0 +1,44 @@
+if(${IOS})
+set(headers ${headers} platform/iOS
+)
+set(currsources
+  platform/iOS/CMakeLists.txt
+  platform/iOS/iOSAppInfoFactory.h
+  platform/iOS/iOSAppInfoFactory.mm
+  platform/iOS/iOSConnectivityService.h
+  platform/iOS/iOSConnectivityService.mm
+  platform/iOS/iOSFileIO.h
+  platform/iOS/iOSFileIO.mm
+  platform/iOS/iOSGlTaskContext.h
+  platform/iOS/iOSGlTaskContext.mm
+  platform/iOS/iOSGlTaskContextFactory.h
+  platform/iOS/iOSGlTaskContextFactory.mm
+  platform/iOS/iOSImageHelpers.h
+  platform/iOS/iOSImageHelpers.mm
+  platform/iOS/iOSLegacyCacheClearWorkItem.h
+  platform/iOS/iOSLegacyCacheClearWorkItem.mm
+  platform/iOS/iOSLocationService.h
+  platform/iOS/iOSLocationService.mm
+  platform/iOS/iOSLoggingHelpers.h
+  platform/iOS/iOSLoggingHelpers.mm
+  platform/iOS/iOSMemoryStats.cpp
+  platform/iOS/iOSMemoryStats.h
+  platform/iOS/iOSNetworkBandwidthStats.mm
+  platform/iOS/iOSPlatformAbstractionModule.h
+  platform/iOS/iOSPlatformAbstractionModule.mm
+  platform/iOS/iOSPlatformConfigBuilder.cpp
+  platform/iOS/iOSPlatformConfigBuilder.h
+  platform/iOS/iOSRenderingHelpers.h
+  platform/iOS/iOSRenderingHelpers.mm
+  platform/iOS/iOSTextureFileLoader.cpp
+  platform/iOS/iOSTextureFileLoader.h
+  platform/iOS/iOSThreadHelpers.mm
+  platform/iOS/iOSUrlEncoder.h
+  platform/iOS/iOSUrlEncoder.mm
+  platform/iOS/PvrLoader.cpp
+  platform/iOS/PvrLoader.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\iOS FILES ${currsources})
+include(platform/iOS/Base/CMakeLists.txt)
+endif(${IOS})

@@ -1,0 +1,18 @@
+// Copyright eeGeo Ltd (2012-2014), All Rights Reserved
+
+#pragma once
+
+namespace Eegeo
+{
+    namespace Camera
+    {
+        class RenderCamera;
+        class ICameraJumpController;
+        class CameraState;
+        
+        namespace SplinePlayback
+        {
+            class CameraSplinePlaybackController;
+        }
+    }
+}

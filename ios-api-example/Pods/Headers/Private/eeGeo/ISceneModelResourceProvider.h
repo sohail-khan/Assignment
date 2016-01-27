@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Rendering/SceneModels/Resources/ISceneModelResourceProvider.h

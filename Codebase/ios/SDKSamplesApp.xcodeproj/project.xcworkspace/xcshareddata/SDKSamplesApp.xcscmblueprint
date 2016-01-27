@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8D4B28E5436597A332526FFF1A75CA0914F3E234",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0BEEF05FB84CA3A625462C31AD691D8BB4DA4A5F" : 0,
+    "8D4B28E5436597A332526FFF1A75CA0914F3E234" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3269488F-A3FE-4A6B-980D-B16664EF7018",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0BEEF05FB84CA3A625462C31AD691D8BB4DA4A5F" : "eegeo-mobile",
+    "8D4B28E5436597A332526FFF1A75CA0914F3E234" : "mobile-sdk-harness"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SDKSamplesApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/SDKSamplesApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/eegeo\/eegeo-mobile.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0BEEF05FB84CA3A625462C31AD691D8BB4DA4A5F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/eegeo\/mobile-sdk-harness",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D4B28E5436597A332526FFF1A75CA0914F3E234"
+    }
+  ]
+}

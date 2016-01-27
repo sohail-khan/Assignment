@@ -1,0 +1,47 @@
+set(headers ${headers} platform/Helpers
+)
+set(currsources
+  platform/Helpers/ArrayAllocator.h
+  platform/Helpers/CallbackCollection.h
+  platform/Helpers/CMakeLists.txt
+  platform/Helpers/ColorHelpers.h
+  platform/Helpers/CubeFaceFileNames.h
+  platform/Helpers/GLHelpers.cpp
+  platform/Helpers/GLHelpers.h
+  platform/Helpers/Helpers.h
+  platform/Helpers/ICallback.h
+  platform/Helpers/IFileIO.h
+  platform/Helpers/IHttpCache.h
+  platform/Helpers/IIdentity.h
+  platform/Helpers/IteratorHelpers.h
+  platform/Helpers/ITextureFileLoader.h
+  platform/Helpers/MathsHelpers.cpp
+  platform/Helpers/MathsHelpers.h
+  platform/Helpers/MD5.cpp
+  platform/Helpers/MD5.h
+  platform/Helpers/ObservableVector.h
+  platform/Helpers/RouletteWheelSelector.cpp
+  platform/Helpers/RouletteWheelSelector.h
+  platform/Helpers/SerializableUrlHash.h
+  platform/Helpers/SerializedJsonHelpers.cpp
+  platform/Helpers/SerializedJsonHelpers.h
+  platform/Helpers/ShaderCompiler.cpp
+  platform/Helpers/ShaderCompiler.h
+  platform/Helpers/StringHelpers.cpp
+  platform/Helpers/StringHelpers.h
+  platform/Helpers/TextureNameHelpers.cpp
+  platform/Helpers/TextureNameHelpers.h
+  platform/Helpers/ThreadHelpers.h
+  platform/Helpers/TimeHelpers.cpp
+  platform/Helpers/TimeHelpers.h
+  platform/Helpers/Timer.cpp
+  platform/Helpers/Timer.h
+  platform/Helpers/tr1.h
+  platform/Helpers/TransformHelpers.cpp
+  platform/Helpers/TransformHelpers.h
+  platform/Helpers/UrlHelpers.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Helpers FILES ${currsources})
+include(platform/Helpers/DDS/CMakeLists.txt)
+include(platform/Helpers/Jpeg/CMakeLists.txt)

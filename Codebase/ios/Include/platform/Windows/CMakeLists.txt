@@ -1,0 +1,44 @@
+if(${WINDOWS})
+set(headers ${headers} platform/Windows
+)
+set(currsources
+  platform/Windows/CMakeLists.txt
+  platform/Windows/WindowsAppInfoFactory.cpp
+  platform/Windows/WindowsAppInfoFactory.h
+  platform/Windows/WindowsCacheFileIO.cpp
+  platform/Windows/WindowsCacheFileIO.h
+  platform/Windows/WindowsConnectivityService.cpp
+  platform/Windows/WindowsConnectivityService.h
+  platform/Windows/WindowsFileIO.cpp
+  platform/Windows/WindowsFileIO.h
+  platform/Windows/WindowsFileIOHelpers.cpp
+  platform/Windows/WindowsFileIOHelpers.h
+  platform/Windows/WindowsGLContextProxy.h
+  platform/Windows/WindowsGlTaskContextFactory.cpp
+  platform/Windows/WindowsGlTaskContextFactory.h
+  platform/Windows/WindowsLocationService.cpp
+  platform/Windows/WindowsLocationService.h
+  platform/Windows/WindowsMemoryStats.cpp
+  platform/Windows/WindowsMemoryStats.h
+  platform/Windows/WindowsNativeState.h
+  platform/Windows/WindowsNetworkBandwidthStats.cpp
+  platform/Windows/WindowsPlatformAbstractionModule.cpp
+  platform/Windows/WindowsPlatformAbstractionModule.h
+  platform/Windows/WindowsPlatformConfigBuilder.cpp
+  platform/Windows/WindowsPlatformConfigBuilder.h
+  platform/Windows/WindowsSharedGlContext.cpp
+  platform/Windows/WindowsSharedGlContext.h
+  platform/Windows/WindowsTextRenderer.cpp
+  platform/Windows/WindowsTextRenderer.h
+  platform/Windows/WindowsTextureFileLoader.cpp
+  platform/Windows/WindowsTextureFileLoader.h
+  platform/Windows/WindowsThreadHelper.cpp
+  platform/Windows/WindowsThreadHelper.h
+  platform/Windows/WindowsUrlEncoder.cpp
+  platform/Windows/WindowsUrlEncoder.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Windows FILES ${currsources})
+include(platform/Windows/Cache/CMakeLists.txt)
+include(platform/Windows/Input/CMakeLists.txt)
+endif(${WINDOWS})

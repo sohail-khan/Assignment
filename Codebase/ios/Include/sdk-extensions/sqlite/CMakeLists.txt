@@ -1,0 +1,66 @@
+set(headers ${headers} sqlite
+)
+set(currsources
+  sqlite/SQLite.h
+  sqlite/SQLiteCellValue.cpp
+  sqlite/SQLiteCellValue.h
+  sqlite/SQLiteDbConnection.cpp
+  sqlite/SQLiteDbConnection.h
+  sqlite/SQLiteDbDownloadFailedHandler.cpp
+  sqlite/SQLiteDbDownloadFailedHandler.h
+  sqlite/SQLiteDbWebLoader.cpp
+  sqlite/SQLiteDbWebLoader.h
+  sqlite/SQLiteDbWebLoaderCompletedHandler.h
+  sqlite/SQLiteFtsComponent.cpp
+  sqlite/SQLiteFtsComponent.h
+  sqlite/SQLiteFtsComponentFactory.cpp
+  sqlite/SQLiteFtsComponentFactory.h
+  sqlite/SQLiteFtsMethods.cpp
+  sqlite/SQLiteFtsMethods.h
+  sqlite/SQLiteFtsQuerySpellingFixer.cpp
+  sqlite/SQLiteFtsQuerySpellingFixer.h
+  sqlite/SQLiteFtsQueryToken.h
+  sqlite/SQLiteFtsQueryTokenizer.cpp
+  sqlite/SQLiteFtsQueryTokenizer.h
+  sqlite/SQLiteFtsQueryTokenizerSession.cpp
+  sqlite/SQLiteFtsQueryTokenizerSession.h
+  sqlite/SQLiteFtsSnippetFormattingConfig.cpp
+  sqlite/SQLiteFtsSnippetFormattingConfig.h
+  sqlite/SQLiteFtsTokenizerType.h
+  sqlite/SQLiteHelpers.cpp
+  sqlite/SQLiteHelpers.h
+  sqlite/SQLiteIncludeSqlite3.h
+  sqlite/SQLiteLatLongQueryBuilder.cpp
+  sqlite/SQLiteLatLongQueryBuilder.h
+  sqlite/SQLiteModule.cpp
+  sqlite/SQLiteModule.h
+  sqlite/SQLiteResultCells.cpp
+  sqlite/SQLiteResultCells.h
+  sqlite/SQLiteResultRow.cpp
+  sqlite/SQLiteResultRow.h
+  sqlite/SQLiteSpellfixOptions.cpp
+  sqlite/SQLiteSpellfixOptions.h
+  sqlite/SQLiteSpellfixSuggestion.h
+  sqlite/SQLiteSpellfixTable.cpp
+  sqlite/SQLiteSpellfixTable.h
+  sqlite/SQLiteSpellfixTableFactory.cpp
+  sqlite/SQLiteSpellfixTableFactory.h
+  sqlite/SQLiteSpellingSuggestionResults.h
+  sqlite/SQLiteTable.cpp
+  sqlite/SQLiteTable.h
+  sqlite/SQLiteTableQuery.cpp
+  sqlite/SQLiteTableQuery.h
+  sqlite/SQLiteTableQueryHelpers.h
+  sqlite/SQLiteTextSearchableTable.cpp
+  sqlite/SQLiteTextSearchableTable.h
+  sqlite/SQLiteTextSearchableTableFactory.cpp
+  sqlite/SQLiteTextSearchableTableFactory.h
+  sqlite/SQLiteTextSearchableTableOffsetInfo.h
+  sqlite/SQLiteTextSearchableTableQueryBuilder.cpp
+  sqlite/SQLiteTextSearchableTableQueryBuilder.h
+  sqlite/SQLiteTextSearchableTableResults.h
+  sqlite/SQLiteValueType.h
+)
+set(sources ${sources} ${currsources})
+source_group(/ FILES ${currsources})
+include(sqlite/sqlite3/CMakeLists.txt)

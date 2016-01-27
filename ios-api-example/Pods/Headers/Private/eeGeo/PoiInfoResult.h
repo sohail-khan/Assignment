@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Search/Service/PoiInfoResult.h

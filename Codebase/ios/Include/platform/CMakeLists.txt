@@ -1,0 +1,64 @@
+set(headers ${headers} platform
+)
+set(currsources
+  platform/AppInfo.cpp
+  platform/AppInfo.h
+  platform/AppInterface.h
+  platform/CMakeLists.txt
+  platform/EegeoDrawParameters.h
+  platform/EegeoEnvironmentCharacterSet.h
+  platform/EegeoRootDeclarations.h
+  platform/EegeoSDK.h
+  platform/EegeoUpdateParameters.h
+  platform/EegeoWindowsGuard.h
+  platform/EegeoWorld.cpp
+  platform/EegeoWorld.h
+  platform/EnvironmentCharacterSet.h
+  platform/FontMaterialSet.h
+  platform/IAppOnMap.h
+  platform/IEegeoErrorHandler.h
+  platform/ITouchController.h
+)
+set(sources ${sources} ${currsources})
+source_group(/ FILES ${currsources})
+include(platform/Android/CMakeLists.txt)
+include(platform/AnimatedObjects/CMakeLists.txt)
+include(platform/Base/CMakeLists.txt)
+include(platform/BuildingFootprints/CMakeLists.txt)
+include(platform/Camera/CMakeLists.txt)
+include(platform/Collision/CMakeLists.txt)
+include(platform/CollisionVisualization/CMakeLists.txt)
+include(platform/Concurrency/CMakeLists.txt)
+include(platform/Config/CMakeLists.txt)
+include(platform/Culling/CMakeLists.txt)
+include(platform/Data/CMakeLists.txt)
+include(platform/DataStructures/CMakeLists.txt)
+include(platform/Debug/CMakeLists.txt)
+include(platform/Fireworks/CMakeLists.txt)
+include(platform/Fonts/CMakeLists.txt)
+include(platform/Geometry/CMakeLists.txt)
+include(platform/Helpers/CMakeLists.txt)
+include(platform/Io/CMakeLists.txt)
+include(platform/iOS/CMakeLists.txt)
+include(platform/Lighting/CMakeLists.txt)
+include(platform/Location/CMakeLists.txt)
+include(platform/Messaging/CMakeLists.txt)
+include(platform/Modules/CMakeLists.txt)
+include(platform/Networking/CMakeLists.txt)
+include(platform/OSX/CMakeLists.txt)
+include(platform/Pins/CMakeLists.txt)
+include(platform/Rendering/CMakeLists.txt)
+include(platform/Resources/CMakeLists.txt)
+include(platform/Routes/CMakeLists.txt)
+include(platform/Search/CMakeLists.txt)
+include(platform/Space/CMakeLists.txt)
+include(platform/Streaming/CMakeLists.txt)
+include(platform/TextMeshes/CMakeLists.txt)
+include(platform/Traffic/CMakeLists.txt)
+include(platform/TrafficCongestion/CMakeLists.txt)
+include(platform/UI/CMakeLists.txt)
+include(platform/Unicode/CMakeLists.txt)
+include(platform/Weather/CMakeLists.txt)
+include(platform/Web/CMakeLists.txt)
+include(platform/Windows/CMakeLists.txt)
+include(platform/WorldStates/CMakeLists.txt)

@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Rendering/SceneModels/Animation/ISceneModelNodeAnimatedProperty.h

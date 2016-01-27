@@ -1,0 +1,41 @@
+set(headers ${headers} platform/Modules/Map/Layers
+)
+set(currsources
+  platform/Modules/Map/Layers/BuildingModelModule.cpp
+  platform/Modules/Map/Layers/BuildingModelModule.h
+  platform/Modules/Map/Layers/BuildingPresentationModule.cpp
+  platform/Modules/Map/Layers/BuildingPresentationModule.h
+  platform/Modules/Map/Layers/BuildingStreamingModule.cpp
+  platform/Modules/Map/Layers/BuildingStreamingModule.h
+  platform/Modules/Map/Layers/CMakeLists.txt
+  platform/Modules/Map/Layers/InteriorsModelModule.cpp
+  platform/Modules/Map/Layers/InteriorsModelModule.h
+  platform/Modules/Map/Layers/InteriorsPresentationModule.cpp
+  platform/Modules/Map/Layers/InteriorsPresentationModule.h
+  platform/Modules/Map/Layers/InteriorsStreamingModule.cpp
+  platform/Modules/Map/Layers/InteriorsStreamingModule.h
+  platform/Modules/Map/Layers/PlaceNamesModelModule.cpp
+  platform/Modules/Map/Layers/PlaceNamesModelModule.h
+  platform/Modules/Map/Layers/PlaceNamesPresentationModule.cpp
+  platform/Modules/Map/Layers/PlaceNamesPresentationModule.h
+  platform/Modules/Map/Layers/PlaceNamesStreamingModule.cpp
+  platform/Modules/Map/Layers/PlaceNamesStreamingModule.h
+  platform/Modules/Map/Layers/ShadowModelModule.cpp
+  platform/Modules/Map/Layers/ShadowModelModule.h
+  platform/Modules/Map/Layers/ShadowPresentationModule.cpp
+  platform/Modules/Map/Layers/ShadowPresentationModule.h
+  platform/Modules/Map/Layers/TerrainModelModule.cpp
+  platform/Modules/Map/Layers/TerrainModelModule.h
+  platform/Modules/Map/Layers/TerrainPresentationModule.cpp
+  platform/Modules/Map/Layers/TerrainPresentationModule.h
+  platform/Modules/Map/Layers/TerrainStreamingModule.cpp
+  platform/Modules/Map/Layers/TerrainStreamingModule.h
+  platform/Modules/Map/Layers/TransportModelModule.cpp
+  platform/Modules/Map/Layers/TransportModelModule.h
+  platform/Modules/Map/Layers/TransportPresentationModule.cpp
+  platform/Modules/Map/Layers/TransportPresentationModule.h
+  platform/Modules/Map/Layers/TransportStreamingModule.cpp
+  platform/Modules/Map/Layers/TransportStreamingModule.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Modules\\Map\\Layers FILES ${currsources})

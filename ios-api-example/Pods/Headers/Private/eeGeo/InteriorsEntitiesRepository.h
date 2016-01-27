@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Resources/Interiors/Entities/InteriorsEntitiesRepository.h

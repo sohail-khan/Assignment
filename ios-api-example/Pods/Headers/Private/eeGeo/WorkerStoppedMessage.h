@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Concurrency/Tasks/Messages/WorkerStoppedMessage.h

@@ -1,0 +1,47 @@
+set(headers ${headers} platform/Base
+)
+set(currsources
+  platform/Base/Allocator.cpp
+  platform/Base/Allocator.h
+  platform/Base/ArrayBuffer.h
+  platform/Base/AssertHandler.cpp
+  platform/Base/AssertHandler.h
+  platform/Base/Blitter.cpp
+  platform/Base/Blitter.h
+  platform/Base/BoundingBox.cpp
+  platform/Base/BoundingBox.h
+  platform/Base/CMakeLists.txt
+  platform/Base/DebugFileLogger.h
+  platform/Base/DebugNewDeleteOverrides.cpp
+  platform/Base/EegeoBaseNew.h
+  platform/Base/EegeoPlatformMacros.h
+  platform/Base/Effect.cpp
+  platform/Base/Effect.h
+  platform/Base/EffectHandler.cpp
+  platform/Base/EffectHandler.h
+  platform/Base/FogShaderOld.cpp
+  platform/Base/FogShaderOld.h
+  platform/Base/FrustumRadar.cpp
+  platform/Base/FrustumRadar.h
+  platform/Base/Graphics.h
+  platform/Base/List.h
+  platform/Base/MathFunc.h
+  platform/Base/Quaternion.cpp
+  platform/Base/Quaternion.h
+  platform/Base/Random.cpp
+  platform/Base/Random.h
+  platform/Base/ShaderOld.cpp
+  platform/Base/ShaderOld.h
+  platform/Base/Spinlock.h
+  platform/Base/TtyHandler.cpp
+  platform/Base/TtyHandler.h
+  platform/Base/Types.h
+  platform/Base/VectorMath.cpp
+  platform/Base/VectorMath.h
+  platform/Base/VectorMathDecl.h
+  platform/Base/VertexFormat.cpp
+  platform/Base/VertexFormat.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Base FILES ${currsources})
+include(platform/Base/Model/CMakeLists.txt)

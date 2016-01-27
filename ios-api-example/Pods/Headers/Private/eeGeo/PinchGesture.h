@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Windows/Input/PinchGesture.h

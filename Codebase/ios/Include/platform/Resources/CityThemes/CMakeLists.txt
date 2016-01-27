@@ -1,0 +1,45 @@
+set(headers ${headers} platform/Resources/CityThemes
+)
+set(currsources
+  platform/Resources/CityThemes/CityThemeAnimatedObjectsObserver.cpp
+  platform/Resources/CityThemes/CityThemeAnimatedObjectsObserver.h
+  platform/Resources/CityThemes/CityThemeAnimationData.cpp
+  platform/Resources/CityThemes/CityThemeAnimationData.h
+  platform/Resources/CityThemes/CityThemeData.cpp
+  platform/Resources/CityThemes/CityThemeData.h
+  platform/Resources/CityThemes/CityThemeJsonParser.cpp
+  platform/Resources/CityThemes/CityThemeJsonParser.h
+  platform/Resources/CityThemes/CityThemeLoader.cpp
+  platform/Resources/CityThemes/CityThemeLoader.h
+  platform/Resources/CityThemes/CityThemeParseManifestWorkItem.cpp
+  platform/Resources/CityThemes/CityThemeParseManifestWorkItem.h
+  platform/Resources/CityThemes/CityThemeRepository.cpp
+  platform/Resources/CityThemes/CityThemeRepository.h
+  platform/Resources/CityThemes/CityThemes.h
+  platform/Resources/CityThemes/CityThemesAnimatedObjectsLoader.cpp
+  platform/Resources/CityThemes/CityThemesAnimatedObjectsLoader.h
+  platform/Resources/CityThemes/CityThemesMissingDataHandler.cpp
+  platform/Resources/CityThemes/CityThemesMissingDataHandler.h
+  platform/Resources/CityThemes/CityThemesService.cpp
+  platform/Resources/CityThemes/CityThemesService.h
+  platform/Resources/CityThemes/CityThemeState.h
+  platform/Resources/CityThemes/CityThemesTextureUpdater.cpp
+  platform/Resources/CityThemes/CityThemesTextureUpdater.h
+  platform/Resources/CityThemes/CityThemesUpdater.cpp
+  platform/Resources/CityThemes/CityThemesUpdater.h
+  platform/Resources/CityThemes/CMakeLists.txt
+  platform/Resources/CityThemes/ICityThemeAnimatedObjectsObserver.h
+  platform/Resources/CityThemes/ICityThemeChangedObservable.h
+  platform/Resources/CityThemes/ICityThemeChangedObserver.h
+  platform/Resources/CityThemes/ICityThemeRepository.h
+  platform/Resources/CityThemes/ICityThemesService.h
+  platform/Resources/CityThemes/ICityThemeStateObservable.h
+  platform/Resources/CityThemes/ICityThemeStateObserver.h
+  platform/Resources/CityThemes/ICityThemesUpdater.h
+  platform/Resources/CityThemes/ModelInfoRef.h
+  platform/Resources/CityThemes/ThemeChangeController.h
+  platform/Resources/CityThemes/ThemeStateController.h
+  platform/Resources/CityThemes/ThemeStateTransitionController.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Resources\\CityThemes FILES ${currsources})

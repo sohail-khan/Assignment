@@ -1,0 +1,43 @@
+set(headers ${headers} platform/Debug/Commands
+)
+set(currsources
+  platform/Debug/Commands/CMakeLists.txt
+  platform/Debug/Commands/Command.cpp
+  platform/Debug/Commands/Command.h
+  platform/Debug/Commands/CommandBuffer.cpp
+  platform/Debug/Commands/CommandBuffer.h
+  platform/Debug/Commands/CommandCallback.h
+  platform/Debug/Commands/CommandParser.cpp
+  platform/Debug/Commands/CommandParser.h
+  platform/Debug/Commands/CommandProcessor.cpp
+  platform/Debug/Commands/CommandProcessor.h
+  platform/Debug/Commands/CommandRegistry.cpp
+  platform/Debug/Commands/CommandRegistry.h
+  platform/Debug/Commands/Commands.h
+  platform/Debug/Commands/CommandTerminal.cpp
+  platform/Debug/Commands/CommandTerminal.h
+  platform/Debug/Commands/EchoCommand.cpp
+  platform/Debug/Commands/EchoCommand.h
+  platform/Debug/Commands/HelpCommand.cpp
+  platform/Debug/Commands/HelpCommand.h
+  platform/Debug/Commands/ListCommandsCommand.cpp
+  platform/Debug/Commands/ListCommandsCommand.h
+  platform/Debug/Commands/RoadNamesOpacityCommand.cpp
+  platform/Debug/Commands/RoadNamesOpacityCommand.h
+  platform/Debug/Commands/SysInfoCommand.cpp
+  platform/Debug/Commands/SysInfoCommand.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Debug\\Commands FILES ${currsources})
+include(platform/Debug/Commands/Camera/CMakeLists.txt)
+include(platform/Debug/Commands/Lighting/CMakeLists.txt)
+include(platform/Debug/Commands/PlaceNames/CMakeLists.txt)
+include(platform/Debug/Commands/Precache/CMakeLists.txt)
+include(platform/Debug/Commands/Profile/CMakeLists.txt)
+include(platform/Debug/Commands/Rendering/CMakeLists.txt)
+include(platform/Debug/Commands/Routes/CMakeLists.txt)
+include(platform/Debug/Commands/Stats/CMakeLists.txt)
+include(platform/Debug/Commands/Stream/CMakeLists.txt)
+include(platform/Debug/Commands/Themes/CMakeLists.txt)
+include(platform/Debug/Commands/TrafficCongestion/CMakeLists.txt)
+include(platform/Debug/Commands/Web/CMakeLists.txt)

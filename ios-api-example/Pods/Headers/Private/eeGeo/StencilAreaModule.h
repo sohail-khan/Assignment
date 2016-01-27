@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Modules/Data/StencilAreaModule.h

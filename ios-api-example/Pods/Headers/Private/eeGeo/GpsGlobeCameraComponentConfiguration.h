@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Camera/GlobeCamera/GpsGlobeCameraComponentConfiguration.h

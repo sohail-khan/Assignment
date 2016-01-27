@@ -1,0 +1,1 @@
+../../../eeGeo/api/private/ScreenPropertiesProvider.h

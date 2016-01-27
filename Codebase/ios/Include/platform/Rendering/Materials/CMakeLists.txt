@@ -1,0 +1,69 @@
+set(headers ${headers} platform/Rendering/Materials
+)
+set(currsources
+  platform/Rendering/Materials/BatchedSpriteMaterial.cpp
+  platform/Rendering/Materials/BatchedSpriteMaterial.h
+  platform/Rendering/Materials/CMakeLists.txt
+  platform/Rendering/Materials/ColorMaterial.cpp
+  platform/Rendering/Materials/ColorMaterial.h
+  platform/Rendering/Materials/CustomLandmarkDiffuseFoggedMaterial.cpp
+  platform/Rendering/Materials/CustomLandmarkDiffuseFoggedMaterial.h
+  platform/Rendering/Materials/CustomLandmarkDiffuseMaterial.cpp
+  platform/Rendering/Materials/CustomLandmarkDiffuseMaterial.h
+  platform/Rendering/Materials/CustomLandmarkDiffuseTransitionMaterial.cpp
+  platform/Rendering/Materials/CustomLandmarkDiffuseTransitionMaterial.h
+  platform/Rendering/Materials/DebugMaterial.cpp
+  platform/Rendering/Materials/DebugMaterial.h
+  platform/Rendering/Materials/DebugTextMaterial.cpp
+  platform/Rendering/Materials/DebugTextMaterial.h
+  platform/Rendering/Materials/DepthlessColorMaterial.cpp
+  platform/Rendering/Materials/DepthlessColorMaterial.h
+  platform/Rendering/Materials/DiffuseMaterial.cpp
+  platform/Rendering/Materials/DiffuseMaterial.h
+  platform/Rendering/Materials/FireworksMaterial.cpp
+  platform/Rendering/Materials/FireworksMaterial.h
+  platform/Rendering/Materials/IDiffuseMaterial.h
+  platform/Rendering/Materials/IMaterial.h
+  platform/Rendering/Materials/LightmappedPackedDiffuseMaterial.cpp
+  platform/Rendering/Materials/LightmappedPackedDiffuseMaterial.h
+  platform/Rendering/Materials/LightmappedPackedDiffuseTransitionMaterial.h
+  platform/Rendering/Materials/LoadingScreenRenderablesFactory.cpp
+  platform/Rendering/Materials/LoadingScreenRenderablesFactory.h
+  platform/Rendering/Materials/MaterialIdGenerator.h
+  platform/Rendering/Materials/MaterialNames.cpp
+  platform/Rendering/Materials/MaterialNames.h
+  platform/Rendering/Materials/ModelMaterial.cpp
+  platform/Rendering/Materials/ModelMaterial.h
+  platform/Rendering/Materials/NullMaterial.h
+  platform/Rendering/Materials/NullMaterialFactory.cpp
+  platform/Rendering/Materials/NullMaterialFactory.h
+  platform/Rendering/Materials/PackedDiffuseFoggedMaterial.cpp
+  platform/Rendering/Materials/PackedDiffuseFoggedMaterial.h
+  platform/Rendering/Materials/PackedDiffuseMaterial.cpp
+  platform/Rendering/Materials/PackedDiffuseMaterial.h
+  platform/Rendering/Materials/PackedDiffuseTransitionMaterial.cpp
+  platform/Rendering/Materials/PackedDiffuseTransitionMaterial.h
+  platform/Rendering/Materials/PackedStencilShadowMaterial.cpp
+  platform/Rendering/Materials/PackedStencilShadowMaterial.h
+  platform/Rendering/Materials/SceneModelMaterial.cpp
+  platform/Rendering/Materials/SceneModelMaterial.h
+  platform/Rendering/Materials/ShadowMaterial.cpp
+  platform/Rendering/Materials/ShadowMaterial.h
+  platform/Rendering/Materials/TextMaterial.cpp
+  platform/Rendering/Materials/TextMaterial.h
+  platform/Rendering/Materials/TexturedUniformColoredMaterial.cpp
+  platform/Rendering/Materials/TexturedUniformColoredMaterial.h
+  platform/Rendering/Materials/UniformColoredMaterial.cpp
+  platform/Rendering/Materials/UniformColoredMaterial.h
+  platform/Rendering/Materials/UniqueDiffuseMaterial.cpp
+  platform/Rendering/Materials/UniqueDiffuseMaterial.h
+  platform/Rendering/Materials/VertexColoredMaterial.cpp
+  platform/Rendering/Materials/VertexColoredMaterial.h
+  platform/Rendering/Materials/WaterMaterial2.cpp
+  platform/Rendering/Materials/WaterMaterial2.h
+  platform/Rendering/Materials/WaterTransitionMaterial.h
+  platform/Rendering/Materials/WeatherOverlayMaterial2.cpp
+  platform/Rendering/Materials/WeatherOverlayMaterial2.h
+)
+set(sources ${sources} ${currsources})
+source_group(\\Rendering\\Materials FILES ${currsources})

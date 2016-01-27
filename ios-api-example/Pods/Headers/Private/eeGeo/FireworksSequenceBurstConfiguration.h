@@ -1,0 +1,1 @@
+../../../eeGeo/platform/Fireworks/FireworksSequenceBurstConfiguration.h

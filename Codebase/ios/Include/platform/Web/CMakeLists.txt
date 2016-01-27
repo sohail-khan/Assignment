@@ -1,0 +1,66 @@
+set(headers ${headers} platform/Web/
+)
+set(currsources
+  platform/Web/ApiTokenValidator.cpp
+  platform/Web/ApiTokenValidator.h
+  platform/Web/BidirectionalWebIOBus.h
+  platform/Web/CMakeLists.txt
+  platform/Web/CurlHelpers.h
+  platform/Web/IConnectivityService.h
+  platform/Web/ImageUploadData.h
+  platform/Web/InFlightWebRequest.cpp
+  platform/Web/InFlightWebRequest.h
+  platform/Web/IWebLoadRequest.h
+  platform/Web/IWebLoadRequestFactory.h
+  platform/Web/IWebProxySettings.h
+  platform/Web/MainToWebIOMessageCatalog.h
+  platform/Web/PendingWebRequestsContainer.cpp
+  platform/Web/PendingWebRequestsContainer.h
+  platform/Web/PlatformUserAgentWebRequestFactory.h
+  platform/Web/PrecacheService.cpp
+  platform/Web/PrecacheService.h
+  platform/Web/UserAgentFactory.cpp
+  platform/Web/UserAgentFactory.h
+  platform/Web/Web.h
+  platform/Web/WebConnectivityErrorHandler.cpp
+  platform/Web/WebConnectivityErrorHandler.h
+  platform/Web/WebConnectivityValidator.cpp
+  platform/Web/WebConnectivityValidator.h
+  platform/Web/WebHeaderHelpers.cpp
+  platform/Web/WebHeaderHelpers.h
+  platform/Web/WebIOConfig.h
+  platform/Web/WebIOToMainMessageCatalog.h
+  platform/Web/WebLoadRequestCompletionCallback.h
+  platform/Web/WebLoadRequestFactory.cpp
+  platform/Web/WebLoadRequestFactory.h
+  platform/Web/WebMessages.h
+  platform/Web/WebModule.cpp
+  platform/Web/WebModule.h
+  platform/Web/WebPostData.cpp
+  platform/Web/WebPostData.h
+  platform/Web/WebProxySettings.cpp
+  platform/Web/WebProxySettings.h
+  platform/Web/WebRequest.cpp
+  platform/Web/WebRequest.h
+  platform/Web/WebRequestBuilder.cpp
+  platform/Web/WebRequestBuilder.h
+  platform/Web/WebRequestDto.h
+  platform/Web/WebRequestHandle.cpp
+  platform/Web/WebRequestHandle.h
+  platform/Web/WebRequestHandlePool.cpp
+  platform/Web/WebRequestHandlePool.h
+  platform/Web/WebRequestService.cpp
+  platform/Web/WebRequestService.h
+  platform/Web/WebRequestServiceBackend.cpp
+  platform/Web/WebRequestServiceBackend.h
+  platform/Web/WebRequestServiceBackendImpl.cpp
+  platform/Web/WebRequestServiceBackendImpl.h
+  platform/Web/WebRequestServiceBackendRunner.cpp
+  platform/Web/WebRequestServiceBackendRunner.h
+  platform/Web/WebResponse.cpp
+  platform/Web/WebResponse.h
+  platform/Web/WebResponseDto.h
+)
+set(sources ${sources} ${currsources})
+source_group(/ FILES ${currsources})
+include(platform/Web/Cache/CMakeLists.txt)
